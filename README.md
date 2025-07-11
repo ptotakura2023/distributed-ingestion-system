@@ -40,6 +40,45 @@ A scalable, containerized file ingestion backend with S3 upload support, Prometh
 ```bash
 git clone https://github.com/yourusername/distributed-ingestion-system.git
 cd distributed-ingestion-system
+```
 
 ### 2. 🧪 Run Locally (with Python)
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
+### 3. 🐳 Run with Docker Compose
+```bash
+docker-compose up --build
+```
+Your services:
+• Flask API → http://localhost:5000
+• Prometheus → http://localhost:9090
+
+Ensure .env contains:
+```bash
+AWS_ACCESS_KEY_ID=your_key
+AWS_SECRET_ACCESS_KEY=your_secret
+AWS_REGION=your_region
+S3_BUCKET_NAME=your_bucket
+```
+📤 File Upload API
+✅ Upload a File (via Postman or cURL)
+POST http://localhost:5000/upload
+Form-Data:
+• Key: file, Value: Choose File
+
+Or use:
+```bash
+curl -X POST -F "file=@yourfile.jpg" http://localhost:5000/upload
+```
+📋 Get Uploaded Files
+```bash
+GET http://localhost:5000/files
+```
+
 
