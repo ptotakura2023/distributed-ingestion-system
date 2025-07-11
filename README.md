@@ -38,7 +38,7 @@ A scalable, containerized file ingestion backend with S3 upload support, Prometh
 ### 1. 🔧 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/distributed-ingestion-system.git
+git clone https://github.com/ptotakura2023/distributed-ingestion-system.git
 cd distributed-ingestion-system
 ```
 
@@ -114,8 +114,8 @@ Secrets managed securely in GitHub Actions:
 ### 📦 Docker Image
 Available on Docker Hub:
 ```bash
-docker pull your-docker-username/distributed-ingestor:latest
-docker run -p 5000:5000 your-docker-username/distributed-ingestor
+docker pull pranaybabu4546/distributed-ingestor:latest
+docker run -p 5000:5000 pranaybabu4546/distributed-ingestor
 ```
 ---
 
