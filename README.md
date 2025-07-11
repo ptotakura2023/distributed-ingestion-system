@@ -1,6 +1,3 @@
-# Distributed File Ingestion System
-
-This project implements a distributed file ingestion pipeline using Flask, AWS S3, SQLite, Docker, and Prometheus. 
 # 📂 Distributed File Ingestion System
 
 A scalable, containerized file ingestion backend with S3 upload support, Prometheus monitoring, Grafana visualization, and CI/CD deployment using GitHub Actions & Docker Hub.
@@ -36,4 +33,13 @@ A scalable, containerized file ingestion backend with S3 upload support, Prometh
 
 ---
 
-## 🧱 Project Structure
+## ⚙️ Setup Instructions
+
+### 1. 🔧 Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/distributed-ingestion-system.git
+cd distributed-ingestion-system
+
+### 2. 🧪 Run Locally (with Python)
+
