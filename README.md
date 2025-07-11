@@ -56,7 +56,9 @@ python app.py
 docker-compose up --build
 ```
 Your services:
+
 • Flask API → http://localhost:5000
+
 • Prometheus → http://localhost:9090
 
 Ensure .env contains:
@@ -67,9 +69,12 @@ AWS_REGION=your_region
 S3_BUCKET_NAME=your_bucket
 ```
 📤 File Upload API
+
 ✅ Upload a File (via Postman or cURL)
+
 POST http://localhost:5000/upload
 Form-Data:
+
 • Key: file, Value: Choose File
 
 Or use:
