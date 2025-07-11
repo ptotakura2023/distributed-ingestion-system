@@ -91,6 +91,7 @@ GET http://localhost:5000/files
 ## 📊 Monitoring & Dashboards
 ### Prometheus
 Visit http://localhost:9090
+
 Sample Queries:
 - flask_http_request_total
 - file_upload_total
@@ -98,7 +99,33 @@ Sample Queries:
 ### Grafana
 - Add Prometheus as data source
 - Build dashboard using metrics above
-
 ---
+## 🔁 CI/CD Pipeline
+Automatically builds Docker image and pushes to Docker Hub
+
+Deployment triggered on push to main
+
+Secrets managed securely in GitHub Actions:
+- DOCKER_USERNAME
+- DOCKER_PASSWORD
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+---
+### 📦 Docker Image
+Available on Docker Hub:
+```bash
+docker pull your-docker-username/distributed-ingestor:latest
+docker run -p 5000:5000 your-docker-username/distributed-ingestor
+```
+---
+## Contributing
+- Contributions are always welcome.
+- Open issues or PRs for feature suggestions or bugs.
+
+
+
+
+
+
 
 
