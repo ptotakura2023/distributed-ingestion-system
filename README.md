@@ -68,7 +68,8 @@ AWS_SECRET_ACCESS_KEY=your_secret
 AWS_REGION=your_region
 S3_BUCKET_NAME=your_bucket
 ```
-📤 File Upload API
+---
+## 📤 File Upload API
 
 ✅ Upload a File (via Postman or cURL)
 
