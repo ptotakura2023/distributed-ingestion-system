@@ -2,7 +2,7 @@
 
 A scalable, containerized file ingestion backend with S3 upload support, Prometheus monitoring, Grafana visualization, and CI/CD deployment using GitHub Actions & Docker Hub.
 
-## 🚀 Live Demo
+## Live Demo
 
 🔗 [https://distributed-ingestion-backend.onrender.com](https://distributed-ingestion-backend.onrender.com)
 
@@ -10,19 +10,19 @@ A scalable, containerized file ingestion backend with S3 upload support, Prometh
 
 ---
 
-## 🧩 Key Features
+## Key Features
 
-- ⚡ Concurrent file uploads to **AWS S3**
-- 🧠 Lightweight **Flask API** with SQLite tracking
-- 📈 Real-time **Prometheus metrics** exposed at `/metrics`
-- 📊 Dashboards powered by **Grafana**
-- 🐳 Dockerized application with `docker-compose`
-- 🔁 Fully automated **CI/CD pipeline** via GitHub Actions
-- 🔐 Secret management with GitHub Actions Secrets
+-  Concurrent file uploads to **AWS S3**
+-  Lightweight **Flask API** with SQLite tracking
+-  Real-time **Prometheus metrics** exposed at `/metrics`
+-  Dashboards powered by **Grafana**
+-  Dockerized application with `docker-compose`
+-  Fully automated **CI/CD pipeline** via GitHub Actions
+-  Secret management with GitHub Actions Secrets
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Python, Flask, SQLite
 - **Cloud Storage**: AWS S3
@@ -33,16 +33,16 @@ A scalable, containerized file ingestion backend with S3 upload support, Prometh
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1. 🔧 Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ptotakura2023/distributed-ingestion-system.git
 cd distributed-ingestion-system
 ```
 
-### 2. 🧪 Run Locally (with Python)
+### 2. Run Locally (with Python)
 
 ```bash
 cd backend
@@ -51,7 +51,7 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
 ```
-### 3. 🐳 Run with Docker Compose
+### 3. Run with Docker Compose
 ```bash
 docker-compose up --build
 ```
@@ -69,9 +69,9 @@ AWS_REGION=your_region
 S3_BUCKET_NAME=your_bucket
 ```
 ---
-## 📤 File Upload API
+## File Upload API
 
-### ✅ Upload a File (via Postman or cURL)
+### Upload a File (via Postman or cURL)
 
 POST http://localhost:5000/upload
 
@@ -88,7 +88,7 @@ curl -X POST -F "file=@yourfile.jpg" http://localhost:5000/upload
 GET http://localhost:5000/files
 ```
 ---
-## 📊 Monitoring & Dashboards
+## Monitoring & Dashboards
 ### Prometheus
 Visit http://localhost:9090
 
@@ -100,7 +100,7 @@ Sample Queries:
 - Add Prometheus as data source
 - Build dashboard using metrics above
 ---
-## 🔁 CI/CD Pipeline
+## CI/CD Pipeline
 Automatically builds Docker image and pushes to Docker Hub
 
 Deployment triggered on push to main
@@ -111,7 +111,7 @@ Secrets managed securely in GitHub Actions:
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
 ---
-### 📦 Docker Image
+### Docker Image
 Available on Docker Hub:
 ```bash
 docker pull pranaybabu4546/distributed-ingestor:latest
