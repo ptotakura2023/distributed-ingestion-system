@@ -91,7 +91,6 @@ GET http://localhost:5000/files
 ## 📊 Monitoring & Dashboards
 ### Prometheus
 Visit http://localhost:9090
-
 Sample Queries:
 - flask_http_request_total
 - file_upload_total
