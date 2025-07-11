@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 import boto3
 import os
-from db import get_db_connection
+from backend.db import get_db_connection
 from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 from datetime import datetime
