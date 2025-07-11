@@ -1,4 +1,4 @@
-# 📂 Distributed File Ingestion System
+# Distributed File Ingestion System
 
 A scalable, containerized file ingestion backend with S3 upload support, Prometheus monitoring, Grafana visualization, and CI/CD deployment using GitHub Actions & Docker Hub.
 
