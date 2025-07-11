@@ -1,8 +1,9 @@
 from flask import Flask
 from flask_cors import CORS
 from prometheus_flask_exporter import PrometheusMetrics
-from routes import routes
-from db import init_db
+from backend.routes import routes
+from backend.db import init_db
+
 
 
 
