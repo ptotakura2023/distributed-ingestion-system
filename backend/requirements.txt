@@ -6,3 +6,5 @@ python-dotenv
 prometheus_client
 #sqlite3  # For standard library support (optional in some environments)
 prometheus-flask-exporter
+gunicorn
+
