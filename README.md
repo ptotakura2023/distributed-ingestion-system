@@ -87,5 +87,19 @@ curl -X POST -F "file=@yourfile.jpg" http://localhost:5000/upload
 ```bash
 GET http://localhost:5000/files
 ```
+---
+## 📊 Monitoring & Dashboards
+### Prometheus
+Visit http://localhost:9090
+
+Sample Queries:
+- flask_http_request_total
+- file_upload_total
+- rate(flask_http_request_duration_seconds_bucket[5m])
+### Grafana
+- Add Prometheus as data source
+- Build dashboard using metrics above
+
+---
 
 
