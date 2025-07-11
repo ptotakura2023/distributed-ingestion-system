@@ -118,8 +118,10 @@ docker pull your-docker-username/distributed-ingestor:latest
 docker run -p 5000:5000 your-docker-username/distributed-ingestor
 ```
 ---
+
 ## License
 This project is open-source and available under the MIT License.
+
 ---
 ## Contributing
 - Contributions are always welcome.
