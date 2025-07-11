@@ -73,7 +73,7 @@ S3_BUCKET_NAME=your_bucket
 
 ### ✅ Upload a File (via Postman or cURL)
 
-POST http://localhost:5000/upload
+# POST http://localhost:5000/upload
 
 Form-Data:
 
